@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Sparkles, Calendar, ArrowRight, Loader2, ListTodo, History, Clock, FileText, Plus, Trash2, PanelLeftClose, PanelLeft, Settings, Sun, Moon, CalendarCheck } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { PomodoroTimer } from './components/PomodoroTimer';
 
 type HistoryItem = {
   id: string;
@@ -447,6 +448,12 @@ export default function App() {
                     </div>
                   )}
                 </form>
+                
+                {activeTab !== 'new' && (
+                  <div className="mt-6 animate-in slide-in-from-bottom-4 fade-in duration-500">
+                    <PomodoroTimer taskName="Focus Session" />
+                  </div>
+                )}
               </div>
             </div>
 
