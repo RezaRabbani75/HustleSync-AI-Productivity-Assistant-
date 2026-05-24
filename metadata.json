@@ -1,0 +1,6 @@
+{
+  "name": "HustleSync Planner",
+  "description": "AI Productivity Coach that transforms your brain dumps into structured, prioritized daily schedules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
